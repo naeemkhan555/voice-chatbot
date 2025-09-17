@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎤 Voice Chatbot</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    #recordBtn {
+      background-color: #4CAF50;
+      color: white;
+    }
+    #recordBtn:hover { background-color: #45a049; }
+
+    #stopBtn {
+      background-color: #f44336;
+      color: white;
+    }
+    #stopBtn:hover { background-color: #d7382f; }
+
+    #responseBox {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 80%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    #response {
+      font-size: 18px;
+      font-weight: 500;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎤 Voice Chatbot</h1>
+
+  <div class="controls">
+    <button id="recordBtn">Start Recording</button>
+    <button id="stopBtn" disabled>Stop Recording</button>
+  </div>
+
+  <div id="responseBox">
+    <p id="response">🤖 Bot reply will appear here...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
